@@ -15,21 +15,19 @@ Explanation -> Given a generic array and target element ,return its index , if n
 Explanation -> from array return Min and Max value
  */
 
-public class CountOccurrence {
-	
-	public static <T> int count(T arr[] , T target ) {
-		int c=0;
-		for(T t : arr) {
-			if (t.equals(target)) {
-				c++;
-			}
-		}
-		return c;
-	}
-	
-	public static void main(String[] args) {
-		String arr[]= {"Hii" ,"Hii" ,"Hello"};
-		System.out.println(" 'Hii' Occurrce in array for "+CountOccurrence.count(arr, "Hii")+" times");
-	}
+public class CountOccurance {
+    public static <T> int count(T[] a, T t) 
+    {
+        int c = 0;
+        for (T x : a)
+        if (x != null && x.equals(t)) c++;
+        return c;
+    }
 
+    public static void main(String[] args) {
+        Integer[] n = {1, 4, 2, 3};
+        String[] s = {"a", "b", "a"};
+        System.out.println(count(n, 2)); 
+        System.out.println(count(s, "a")); 
+    }
 }
