@@ -15,7 +15,7 @@ Explanation -> Given a generic array and target element ,return its index , if n
 Explanation -> from array return Min and Max value
  */
 
-public class CountOccurance {
+public class CountOccurrence {
     public static <T> int count(T[] a, T t) 
     {
         int c = 0;
